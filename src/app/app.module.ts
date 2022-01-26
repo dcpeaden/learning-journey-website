@@ -8,13 +8,12 @@ import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbMenuModule, NbIconMod
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HomePageModule } from './home-page/home-page.module';
 import { ResumePageComponent } from './resume-page/resume-page.component';
-import { MenuLinkComponent } from './menu-link/menu-link.component';
+import { MenuLinkModule } from './menu-link/menu-link.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumePageComponent,
-    MenuLinkComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +26,7 @@ import { MenuLinkComponent } from './menu-link/menu-link.component';
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),
     NbIconModule,
+    MenuLinkModule
   ],
   providers: [],
   bootstrap: [AppComponent],
